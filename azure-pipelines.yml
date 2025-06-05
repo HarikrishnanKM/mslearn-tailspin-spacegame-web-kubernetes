@@ -47,7 +47,7 @@ stages:
       - deployment: Deploy
         displayName: Deploy
         pool:
-          vmImage: "ubuntu-20.04"
+          vmImage: "ubuntu-latest"
         environment: "Dev"
         variables:
           - group: Release
@@ -73,7 +73,7 @@ stages:
                   inputs:
                     action: deploy
                     connectionType: azureResourceManager
-                    azureSubscriptionConnection: "Kubernetes Cluster Connection"
+                    azureSubscriptionConnection: "Resource Manager - Tailspin - Space Game"
                     azureResourceGroup: "tailspin-space-game-rg"
                     kubernetesCluster: "tailspinspacegame-24591"
                     namespace: "default"
