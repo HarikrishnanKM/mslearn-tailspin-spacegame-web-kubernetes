@@ -75,7 +75,7 @@ stages:
                     connectionType: azureResourceManager
                     azureSubscriptionConnection: "Resource Manager - Tailspin - Space Game"
                     azureResourceGroup: "tailspin-space-game-rg"
-                    kubernetesCluster: "tailspinspacegame-24591"
+                    kubernetesCluster: "tailspinspacegame-18011"
                     namespace: "default"
                     manifests: |
                       $(Pipeline.Workspace)/manifests/deployment.yml
